@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Study Notes Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-book-open"></i> Beautiful Study Notes Hub</h1>
+        <p>Share, Search, and Access Study Notes with Style</p>
+    </header>
+    
+    <section id="search-section">
+        <input type="text" id="search-bar" placeholder="Search notes by title or category...">
+    </section>
+    
+    <section id="notes-list">
+        <h2><i class="fas fa-list"></i> Shared Notes</h2>
+        <div id="notes-container">
+            <!-- Notes will be loaded here -->
+        </div>
+    </section>
+    
+    <section id="add-note">
+        <h2><i class="fas fa-plus-circle"></i> Add a New Note</h2>
+        <form id="note-form">
+            <label for="title"><i class="fas fa-heading"></i> Title:</label>
+            <input type="text" id="title" required>
+            
+            <label for="category"><i class="fas fa-tags"></i> Category:</label>
+            <select id="category">
+                <option value="Math">Math</option>
+                <option value="Science">Science</option>
+                <option value="History">History</option>
+                <option value="Literature">Literature</option>
+                <option value="Other">Other</option>
+            </select>
+            
+            <label for="content"><i class="fas fa-edit"></i> Content:</label>
+            <textarea id="content" rows="5" required></textarea>
+            
+            <button type="submit"><i class="fas fa-save"></i> Add Note</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Beautiful Study Notes Hub. <i class="fas fa-heart"></i> Share knowledge beautifully.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
